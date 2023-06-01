@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="form-block">
+        <form method="post" class="form" novalidate>
+          <h1 class="form-title">Email verification</h1>
+          <p class="form-description">
+            Let’s get started with this simple verification.
+          </p>
+
+          <div class="field-block">
+            <label class="field-label" for="email">Email verification</label>
+            <input
+              class="field-input"
+              id="form-email"
+              type="text"
+              placeholder="example@mail.com"
+            />
+            <strong class="error-block">
+              <img class="error-img" src="./icons/error.png" alt="" />
+              <p class="error-description">
+                Looks like it’s not an email. Check it.
+              </p>
+            </strong>
+          </div>
+          <div class="field-block">
+            <label class="field-label" for="http">Verification URL</label>
+            <input
+              class="field-input"
+              id="form-http"
+              type="text"
+              placeholder="http://"
+            />
+            <strong class="error-block">
+              <img class="error-img" src="./icons/error.png" alt="" />
+              <p class="error-description">What about security bro?</p>
+            </strong>
+          </div>
+          <input
+            class="form-submit"
+            id="form-submit"
+            type="submit"
+            value="Move forward"
+          />
+        </form>
+      </div>
+
+      <div class="cloud-red"></div>
+      <div class="cloud-blue"></div>
+    </main>
+
+    <!-- jQuery -->
+    <script src="./lib/jQuery/jquery-3.6.0.min.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>
